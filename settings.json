@@ -1,0 +1,70 @@
+// ~/Library/Application\ Support/Code/User/settings.json
+{
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "editor.rulers": [ 100, 120 ],
+    // "editor.renderIndentGuides": false,
+    "editor.tabSize": 2,
+    "elixirLS.dialyzerEnabled": false,
+    "elixirLS.projectDir": ".",
+    "emmet.includeLanguages": {
+        "HTML (Eex)": "html"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "files.trimTrailingWhitespace": true,
+    // https://marketplace.visualstudio.com/items?itemName=will-wow.vscode-open-buffers
+    "explorer.openEditors.visible": 0,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 10,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "pgsql.format.keywordCasing": "lowercase",
+    "python.linting.enabled": false,
+    "sqltools.format": {
+       "indentSize": 4,
+       "reservedWordCase": "lower"
+    },
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.env.osx": {
+        "EDITOR": "code",
+        "GIT_EDITOR": "code -w",
+    },
+    "terminal.integrated.fontFamily": "Monaco for Powerline",
+    "terminal.integrated.fontSize": 10,
+    // https://github.com/VSCodeVim/Vim
+    "vim.leader": ",",
+    "vim.vimrc.enable": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "t"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "b", "e"],
+            "commands": ["open-buffers.openBuffer"]
+        }
+    ],
+    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Atom One Light",
+    "workbench.editor.showTabs": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.sideBar.location": "left",
+    "files.associations": {
+        "*.sql": "sql"
+    },
+    "sqltools.connections": [
+        {
+            "database": "f1db",
+            "dialect": "PostgreSQL",
+            "name": "f1db",
+            "password": "postgres",
+            "port": 5432,
+            "server": "localhost",
+            "username": "postgres"
+        }
+    ],
+    "breadcrumbs.enabled": false
+}
