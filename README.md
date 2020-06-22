@@ -8,3 +8,7 @@ https://code.visualstudio.com
     git clone https://github.com/nicholasjhenry/vscode.git
     rm -r ~/Library/Application\ Support/Code/User
     ln ~/Development/vscode ~/Library/Application\ Support/Code/User
+
+## Links
+
+- Generate snippets: https://snippet-generator.app/
