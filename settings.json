@@ -66,5 +66,8 @@
             "username": "postgres"
         }
     ],
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "files.exclude": {
+        "**/cover": true
+    }
 }
