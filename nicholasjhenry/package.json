@@ -30,6 +30,7 @@
         "ms-vscode-remote.remote-ssh", 
         "ms-vscode-remote.remote-ssh-edit", 
         "mtxr.sqltools", 
+        "pnp.polacode", 
         "redhat.vscode-yaml", 
         "shuworks.vscode-table-formatter", 
         "sianglim.slim", 
