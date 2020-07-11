@@ -1,0 +1,43 @@
+{
+    "name": "nicholasjhenry",
+    "displayName": "Nicholas' Curated Extensions",
+    "description": "My extensions",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionPack": [ 
+        "akamud.vscode-theme-onelight", 
+        "ban.spellright", 
+        "deerawan.vscode-dash", 
+        "eamodio.gitlens", 
+        "hediet.vscode-drawio", 
+        "JakeBecker.elixir-ls", 
+        "lonefy.vscode-JS-CSS-HTML-formatter", 
+        "mechatroner.rainbow-csv", 
+        "mjmcloug.vscode-elixir", 
+        "mrorz.language-gettext", 
+        "ms-azuretools.vscode-docker", 
+        "ms-kubernetes-tools.vscode-kubernetes-tools", 
+        "ms-ossdata.vscode-postgresql", 
+        "ms-python.python", 
+        "ms-vscode-remote.remote-containers", 
+        "ms-vscode-remote.remote-ssh", 
+        "ms-vscode-remote.remote-ssh-edit", 
+        "mtxr.sqltools", 
+        "redhat.vscode-yaml", 
+        "shuworks.vscode-table-formatter", 
+        "sianglim.slim", 
+        "splittydev.iodine-vscode", 
+        "stkb.rewrap", 
+        "stubailo.ignore-gitignore", 
+        "tht13.html-preview-vscode", 
+        "tomoki1207.pdf", 
+        "vscodevim.vim", 
+        "will-wow.vscode-open-buffers", 
+        "yzhang.markdown-all-in-one"
+    ]
+}
