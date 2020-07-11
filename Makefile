@@ -3,3 +3,7 @@ extensions.setup:
 
 extensions.update:
 	yo code --extensionName nicholasjhenry --extensionType extensionpack --extensionDisplayName "Nicholas' Curated Extensions" --extensionDescription "My extensions"
+
+
+extensions.show:
+	cat nicholasjhenry/package.json
