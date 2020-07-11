@@ -11,9 +11,8 @@ https://code.visualstudio.com
     ln ~/Development/vscode ~/Library/Application\ Support/Code/User
 
     # extensions
-    npm install -g yo generator-code
-    yo code
-    yo code --extensionName nicholasjhenry --extensionType extensionpack --extensionDisplayName "Nicholas' Curated Extensions" --extensionDescription "My extensions"
+    make extensions.setup
+    make extensions.update
     ? Add the currently installed extensions to the extension pack? (Y/n) Y
     code nicholasjhenry # to install
 
