@@ -12,6 +12,7 @@
     "extensionPack": [ 
         "akamud.vscode-theme-onelight", 
         "ban.spellright", 
+        "dbaeumer.vscode-eslint", 
         "deerawan.vscode-dash", 
         "eamodio.gitlens", 
         "hediet.vscode-drawio", 

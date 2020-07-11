@@ -19,6 +19,7 @@
     "editor.fontSize": 10,
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
+    "editor.renameOnType": true,
     "editor.renderWhitespace": "all",
     "pgsql.format.keywordCasing": "lowercase",
     "python.linting.enabled": false,
