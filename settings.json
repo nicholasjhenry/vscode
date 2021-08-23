@@ -4,40 +4,40 @@
     "better-comments.highlightPlainText": true,
     "better-comments.tags": [
         {
-          "tag": "!",
-          "color": "#FF2D00",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
         },
         {
-          "tag": "?",
-          "color": "#3498DB",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
         },
         {
-          "tag": "//",
-          "color": "#474747",
-          "strikethrough": true,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
         },
         {
-          "tag": "todo",
-          "color": "#FF8C00",
-          "strikethrough": false,
-          "underline": false,
-          "backgroundColor": "transparent",
-          "bold": false,
-          "italic": false
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
         },
         {
             "tag": "*",
@@ -47,19 +47,24 @@
             "backgroundColor": "transparent",
             "bold": false,
             "italic": false
-          }
+        }
     ],
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "editor.rulers": [ 100, 120 ],
+    "editor.rulers": [
+        100,
+        120
+    ],
     // "editor.renderIndentGuides": false,
     "editor.tabSize": 2,
     "elixirLS.dialyzerEnabled": false,
+    "elixirLS.fetchDeps": false,
     "elixirLS.projectDir": ".",
     "emmet.includeLanguages": {
         "HTML (Eex)": "html"
     },
+    "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDragAndDrop": false,
     "files.trimTrailingWhitespace": true,
     // https://marketplace.visualstudio.com/items?itemName=will-wow.vscode-open-buffers
@@ -67,14 +72,16 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontSize": 10,
     "editor.fontLigatures": true,
-    "editor.minimap.enabled": true,
+    // Formatter for ElixirLS is buggy: https://github.com/elixir-lsp/elixir-ls/issues/361
+    "editor.formatOnSave": false,
+    "editor.minimap.enabled": false,
     "editor.linkedEditing": true,
     "editor.renderWhitespace": "all",
     "pgsql.format.keywordCasing": "lowercase",
     "python.linting.enabled": false,
     "sqltools.format": {
-       "indentSize": 4,
-       "reservedWordCase": "lower"
+        "indentSize": 4,
+        "reservedWordCase": "lower"
     },
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.env.osx": {
@@ -88,15 +95,25 @@
     "vim.vimrc.enable": false,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "t"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
         },
         {
-            "before": ["<leader>", "b", "e"],
-            "commands": ["open-buffers.openBuffer"]
+            "before": [
+                "<leader>",
+                "b",
+                "e"
+            ],
+            "commands": [
+                "open-buffers.openBuffer"
+            ]
         }
     ],
-    "window.zoomLevel": 1,
     "workbench.colorTheme": "Better Solarized Light",
     "workbench.editor.showTabs": false,
     "workbench.editor.enablePreview": false,
@@ -119,11 +136,27 @@
     ],
     "breadcrumbs.enabled": true,
     "files.exclude": {
-        "**/cover": true
+        "**/cover": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "gitlens.advanced.messages": {
+        "suppressRebaseSwitchToTextWarning": true
+    },
+    "java.project.importHint": false,
+    "window.zoomLevel": 1,
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open"
 }
