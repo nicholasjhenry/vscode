@@ -67,6 +67,7 @@
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDragAndDrop": false,
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     // https://marketplace.visualstudio.com/items?itemName=will-wow.vscode-open-buffers
     "explorer.openEditors.visible": 0,
     "editor.fontFamily": "Fira Code",
@@ -77,8 +78,8 @@
     "editor.minimap.enabled": false,
     "editor.linkedEditing": true,
     "editor.renderWhitespace": "all",
-    "pgsql.format.keywordCasing": "lowercase",
-    "python.linting.enabled": false,
+    "fzf-quick-open.initialWorkingDirectory": "/Users/nicholas/.notes/",
+    "fzf-quick-open.findDirectoriesCmd": "fd --type d",
     "sqltools.format": {
         "indentSize": 4,
         "reservedWordCase": "lower"
@@ -88,7 +89,7 @@
         "EDITOR": "code",
         "GIT_EDITOR": "code -w",
     },
-    "terminal.integrated.fontFamily": "Monaco for Powerline",
+    "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.fontSize": 10,
     // https://github.com/VSCodeVim/Vim
     "vim.leader": ",",
@@ -112,17 +113,25 @@
             "commands": [
                 "open-buffers.openBuffer"
             ]
-        }
+        },
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        }, // moveLineDown
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        } // moveLineUp
     ],
     "workbench.colorTheme": "Better Solarized Light",
     "workbench.editor.showTabs": false,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.panel.defaultLocation": "right",
-    "workbench.sideBar.location": "left",
     "files.associations": {
         "*.sql": "sql"
     },
+    "solargraph.formatting": true,
     "sqltools.connections": [
         {
             "database": "f1db",
@@ -148,15 +157,16 @@
     },
     "explorer.confirmDelete": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "gitlens.advanced.messages": {
         "suppressRebaseSwitchToTextWarning": true
     },
-    "java.project.importHint": false,
-    "window.zoomLevel": 1,
     "workbench.editorAssociations": {
         "git-rebase-todo": "default"
     },
     "redhat.telemetry.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.accessibilitySupport": "off",
+    "snyk.yesWelcomeNotification": false,
+    "window.zoomLevel": 1,
+    "editor.inlineSuggest.enabled": true,
 }
